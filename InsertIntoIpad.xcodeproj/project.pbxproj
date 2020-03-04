@@ -13,6 +13,7 @@
 		46FEC924240F25E90086580A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FEC922240F25E90086580A /* Main.storyboard */; };
 		46FEC926240F25EB0086580A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46FEC925240F25EB0086580A /* Assets.xcassets */; };
 		46FEC929240F25EB0086580A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46FEC927240F25EB0086580A /* LaunchScreen.storyboard */; };
+		46FEC933240F26000086580A /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FEC932240F26000086580A /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		46FEC925240F25EB0086580A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46FEC928240F25EB0086580A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46FEC92A240F25EB0086580A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46FEC930240F25FB0086580A /* InsertIntoIpad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsertIntoIpad.entitlements; sourceTree = "<group>"; };
+		46FEC932240F26000086580A /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46FEC933240F26000086580A /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +46,7 @@
 			children = (
 				46FEC91B240F25E90086580A /* InsertIntoIpad */,
 				46FEC91A240F25E90086580A /* Products */,
+				46FEC931240F26000086580A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +61,7 @@
 		46FEC91B240F25E90086580A /* InsertIntoIpad */ = {
 			isa = PBXGroup;
 			children = (
+				46FEC930240F25FB0086580A /* InsertIntoIpad.entitlements */,
 				46FEC91C240F25E90086580A /* AppDelegate.swift */,
 				46FEC91E240F25E90086580A /* SceneDelegate.swift */,
 				46FEC920240F25E90086580A /* ViewController.swift */,
@@ -65,6 +71,14 @@
 				46FEC92A240F25EB0086580A /* Info.plist */,
 			);
 			path = InsertIntoIpad;
+			sourceTree = "<group>";
+		};
+		46FEC931240F26000086580A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46FEC932240F26000086580A /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InsertIntoIpad/InsertIntoIpad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ552MTEJZ;
 				INFOPLIST_FILE = InsertIntoIpad/Info.plist;
@@ -302,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InsertIntoIpad/InsertIntoIpad.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZ552MTEJZ;
 				INFOPLIST_FILE = InsertIntoIpad/Info.plist;
