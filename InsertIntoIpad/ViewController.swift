@@ -11,15 +11,23 @@ import CloudKit
 
 class ViewController: UIViewController {
     // MARK: - properties of the ViewController
+    
+    var myRequestController = MyRequestController()
+    
     var dbs : CKDatabase {
         return CKContainer(identifier: "iCloud.com.dia.cloudKitExample.open").publicCloudDatabase
     }
-   
+    @IBOutlet weak var studentLabel: UITextField!
+    
+    @IBOutlet weak var appLabel: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         addRecord()
+        
+       // addRecord()
         // upDateRecord2()
-        //useModifyOperation()
+       //  useModifyOperation()
+        
     }
     
        fileprivate func addRecord() {
@@ -41,15 +49,41 @@ class ViewController: UIViewController {
            }
        }
     
-    fileprivate func upDateRecord()  {
+    @IBAction func PressedSamABC(_ sender: Any) {
+        studentLabel.text = "test__Sam_Hirsch"
+        appLabel.text =  "ABC - Magnetic Alphabet HD for Kids"
+        upDateRecord(studentID: "test__Sam_Hirsch", appID: "ABC - Magnetic Alphabet HD for Kids")
+        myRequestController.sendRequest(putInNotes: "Profile-App-1Kiosk ABC - Magnetic Alphabet HD for Kids")
+        
+    }
+    
+     @IBAction func PressedDavidABC(_ sender: Any) {
+         studentLabel.text = "test__David_Lowey"
+         appLabel.text =  "Moose Math - Duck Duck Moose"
+         upDateRecord(studentID: "test__David_Lowey", appID: "Moose Math - Duck Duck Moose")
+         myRequestController.sendRequest(putInNotes: "Profile-App-1Kiosk Moose Math - Duck Duck Moose")
+     }
+    
+   
+    
+    fileprivate func upDateRecord(studentID: String, appID: String)  {
         let recordID = CKRecord.ID(recordName: "01d9c633046fbfba766df508eccb6ed0e6dad548")
 
         dbs.fetch(withRecordID: recordID) { record, error in
 
             if let record = record, error == nil {
+                               
+                let theStudentID = CKRecord.ID(recordName: studentID )
+                let studentRef = CKRecord.Reference(recordID: theStudentID, action: .none)
+                record["studentID"] = studentRef as CKRecord.Reference
                 
-                print(record["name"] as Any)
-                dump(record)
+                let theAppID = CKRecord.ID(recordName: appID )
+                let appRef = CKRecord.Reference(recordID: theAppID, action: .none)
+                record["appID"] = appRef as CKRecord.Reference
+
+                record["loginTime"] = Date() as NSDate
+                
+                
                 record["currentUser"] = NSString("zzzz")
                 record["identifier"] =  NSString("oooooo")
                 record["userLevel"] =   NSString("l01")
@@ -61,9 +95,6 @@ class ViewController: UIViewController {
                         print("received error")
                     }
                 }
-
-                //update your record here
-
             }
         }
     }
