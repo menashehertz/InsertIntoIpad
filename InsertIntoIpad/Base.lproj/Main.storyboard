@@ -127,17 +127,17 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6M-f5-cFG">
-                                <rect key="frame" x="20" y="209" width="87" height="30"/>
+                                <rect key="frame" x="20" y="209" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sam - ABC"/>
+                                <state key="normal" title="Set to Sam - ABC"/>
                                 <connections>
                                     <action selector="PressedSamABC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l40-1d-JHc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3b-A8-XCf">
-                                <rect key="frame" x="20" y="247" width="87" height="30"/>
+                                <rect key="frame" x="20" y="247" width="378" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="David - ABC"/>
+                                <state key="normal" title="Set to David - Duck duck Moose"/>
                                 <connections>
                                     <action selector="PressedDavidABC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVk-XY-4sv"/>
                                 </connections>

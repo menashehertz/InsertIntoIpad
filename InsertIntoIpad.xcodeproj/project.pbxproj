@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46AFF29524127E5B009D5EE2 /* MyRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AFF29424127E5B009D5EE2 /* MyRequestController.swift */; };
+		460023E324192676004D96A2 /* MyRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460023E224192676004D96A2 /* MyRequestController.swift */; };
 		46FEC91D240F25E90086580A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FEC91C240F25E90086580A /* AppDelegate.swift */; };
 		46FEC91F240F25E90086580A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FEC91E240F25E90086580A /* SceneDelegate.swift */; };
 		46FEC921240F25E90086580A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FEC920240F25E90086580A /* ViewController.swift */; };
@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46AFF29424127E5B009D5EE2 /* MyRequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRequestController.swift; path = ../../../../../../../../../../Desktop/MyRequestController.swift; sourceTree = "<group>"; };
+		460023E224192676004D96A2 /* MyRequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyRequestController.swift; path = ../../../../MyRequestController.swift; sourceTree = "<group>"; };
 		46FEC919240F25E90086580A /* InsertIntoIpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsertIntoIpad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46FEC91C240F25E90086580A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46FEC91E240F25E90086580A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +66,8 @@
 				46FEC930240F25FB0086580A /* InsertIntoIpad.entitlements */,
 				46FEC91C240F25E90086580A /* AppDelegate.swift */,
 				46FEC91E240F25E90086580A /* SceneDelegate.swift */,
+				460023E224192676004D96A2 /* MyRequestController.swift */,
 				46FEC920240F25E90086580A /* ViewController.swift */,
-				46AFF29424127E5B009D5EE2 /* MyRequestController.swift */,
 				46FEC922240F25E90086580A /* Main.storyboard */,
 				46FEC925240F25EB0086580A /* Assets.xcassets */,
 				46FEC927240F25EB0086580A /* LaunchScreen.storyboard */,
@@ -158,7 +158,7 @@
 				46FEC921240F25E90086580A /* ViewController.swift in Sources */,
 				46FEC91D240F25E90086580A /* AppDelegate.swift in Sources */,
 				46FEC91F240F25E90086580A /* SceneDelegate.swift in Sources */,
-				46AFF29524127E5B009D5EE2 /* MyRequestController.swift in Sources */,
+				460023E324192676004D96A2 /* MyRequestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
